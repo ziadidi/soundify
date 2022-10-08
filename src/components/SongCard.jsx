@@ -17,7 +17,7 @@ const SongCard = ({ song, isPlaying, activeSong, i, data }) => {
 
   return (
     <div
-      className="flex flex-col w-[250px] p-4 bg-white/5
+      className="w-[100px] flex flex-col md:w-[150px] p-4 bg-white/5
   bg-opacity-80 backdrop-blur-sm animate-slideup
   rounded-lg cursor-pointer"
     >
@@ -47,7 +47,7 @@ const SongCard = ({ song, isPlaying, activeSong, i, data }) => {
             {song.title}
           </Link>
         </p>
-        <p className="text-sm truncate text-gray-400 mt-1">
+        <p className="text-sm truncate text-gray-300 mt-1">
           <Link to={song.artists ? `/artists/${song?.artists[0]?.adamin}` : '/top-artists' }>
             {song.subtitle}
           </Link>
